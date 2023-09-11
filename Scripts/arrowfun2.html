@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrow-add event listener</title>
+    <style>
+        #div1{
+            width: 200px;
+            height: 200px;
+            background-color: lightsalmon;
+
+        }
+        #divm{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="divm">
+        <div id="div1">Hello</div>
+    </div>
+    <br><br>
+    <button id="btn1">Hide</button>
+    <button id="btn2">Show</button>
+    <script type="text/javascript">
+        var btn1=document.getElementById('btn1');
+        var btn2=document.getElementById('btn2');
+
+        btn1.addEventListener("click",()=>{
+            var div1=document.getElementById('div1');
+            div1.style.display='none';
+        });
+        btn2.addEventListener("click",()=>{
+            var div1=document.getElementById('div1');
+            div1.style.display='block';
+        });
+
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /*var i=1;
+        for (i=1;i<=5;i++){
+            document.write(i+"<br>");
+            console.log(i+"<br>");
+        }
+        var i=1;
+        for ( ;i<=5; ){
+            document.write(i+'<br>');
+            i++;
+        }
+        var i=1;
+        for ( ;i<=5; ){
+            document.write(i++ +'<br>');
+            
+        }*/
+        //multiple initializations
+       /* var i=1;
+        var j=1;
+        for (i=10,j=20; i<=15;j--){
+            document.write(i++ +'<br>');
+            document.write(j++ +'<br>');
+        }*/
+        var i=1;
+        var j=1;
+        for (i=10,j=20; i<=15;i++,j--){
+            document.write(i++ +'<br>');
+            document.write(j++ +'<br>');
+        }
+        
+
+  const str = 'karthik';
+  const iterator = str[Symbol.iterator]();
+  let theChar = iterator.next();
+ 
+  for(let i = 0; i < str.length ;i++) {
+    
+    console.log(theChar.value , theChar.done);
+    theChar = iterator.next();
+  }
+  //break in for loop
+  for (var i=1;i<10;i++){break;}
+  document.write(i+'<br>');
+  for (var i=1;i<10;i++){}
+  document.write(i+'<br>');
+
+  var i=1;
+  for (;;){
+    if (i--){
+        break;
+    }
+  }
+  document.write(i+'<br>');
+
+  
+  var i=1;
+  for (;;){
+    if (i--){
+        i=10;
+        break;
+        i=10;
+    }
+  }
+  document.write(i+'<br>');
+  //continue in for loop
+  var i=5;
+  for (;i;){
+    i--;
+    continue;
+
+  }
+  document.write(i+'<br>');
+
+  var i=5;
+  for (;i;){
+    i--;
+   document.write(i+'<br>');
+
+  }
+
+  var i=5;
+  for (;i>>2;){
+    i--;
+  }
+  document.write(i +'<br>');
+ 
+  for (var i=0;i<=10;i++){
+    continue;
+    document.write(i+"<br>");
+  }
+  document.write(i + '<br>');
+
+  //nested loop
+  var i=1;
+  for (;i<10;i++)
+  for (;i<5;i++)
+  document.write(i + '<br>');
+  document.write(i + '<br>');
+
+  for (var i=1; i<5; document.write(i++ + '<br>'))
+  document.write(i + '<br>');
+
+  for (var i=1;i<=2;i++)
+  for (var j=1;j<=2;j++)
+  for (var k=1;k<=2;k++)
+  document.write(i+" "+j+" "+k+" "+"<br>");
+        
+
+    </script>
+</body>
+</html>

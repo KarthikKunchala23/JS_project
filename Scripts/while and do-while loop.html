@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while loop</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var i=1;
+        while (i<=5)
+        {
+            document.write(i++ +'<br>');
+        }
+        //prime number 
+        var num=7;
+        var i=2;
+        var count=0;
+        while (i< num){
+           if (num%i==0){
+            document.write(num +'is not a prime'+'<br>');
+            count++
+            break;
+           }
+           i++;
+        }
+        if (!count){
+            document.write(num +'is a prime number'+'<br>');
+        }
+        //do-while loop is an exit control statement block of code executes first before condition checked
+        do
+        {
+            document.write('condition fails but block of code executes'+'<br>');
+        }while(0);
+        //############
+        var i=5;
+        do{
+            document.write(i +'<br>');
+            i++;
+        }while(i<=5);
+        //##########
+        var s=4;
+        do{
+           document.write(s +'<br>');
+           s++;
+        }while (s<=6);
+        //nested do while loop
+        var i=1;
+        do{
+            do{
+                document.write('hello'+'<br>');
+            }while (false);
+            document.write(i +'<br>');
+            i++;
+        }while (i<=6);
+        
+    </script>
+</body>
+</html>

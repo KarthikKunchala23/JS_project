@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event listener</title>
+</head>
+<body>
+    <textarea id="txt1">Hello</textarea>
+    <script type="text/javascript">
+        var txt1=document.getElementById('txt1');
+        txt1.addEventListener("focus", 
+        function eventFocus(){
+            txt1.style.background='skyblue';
+
+        });
+        txt1.addEventListener("blur", 
+        function eventBlur(){
+            txt1.style.background='white';
+
+        });
+
+    </script>
+</body>
+</html>

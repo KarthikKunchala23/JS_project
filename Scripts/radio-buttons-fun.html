@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio button function</title>
+</head>
+<body>
+    <input type="radio" id="male" name="gender" onclick="radiomale()">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" onclick="radiofemale()">
+    <label for="female">Female</label>
+    <br><br>
+    <button onclick="btnclick()">Click</button>
+    <h1 id="idh1"></h1>
+    <script type="text/javascript">
+        function btnclick(){
+            var radios=document.getElementsByName('gender');
+            for (var i=0; i<radios.length; i++)
+            {
+                console.log(radios[i].checked);
+                if(radios[i].checked==true){
+                    var h=document.getElementById('idh1');
+                    h.innerHTML=radios[i].id;
+                    h.style.color='aqua';
+                    /*document.write(radios.length);*/
+                    break;
+
+                }
+            }
+        }
+        //##########################
+        function radiomale()
+        {
+            var rm=document.getElementById('male');
+            var rfm=document.getElementById('female');
+            var s='radiomale :';
+            s+=' male - ';
+            s+=rm.checked ;
+            s+=', female -';
+            s+=rfm.checked;
+            console.log(s);
+        }
+        function radiofemale()
+        {
+            var rm=document.getElementById('male');
+            var rfm=document.getElementById('female');
+            var s='radiofemale :';
+            s+=' male - ';
+            s+=rm.checked ;
+            s+=', female -';
+            s+=rfm.checked;
+            console.log(s);
+        }
+
+    </script>
+</body>
+</html>

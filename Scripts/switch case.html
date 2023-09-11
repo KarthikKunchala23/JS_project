@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch case</title>
+</head>
+<body>
+    <h2>javascript</h2>
+
+    <p id="demo"></p>
+    <script type="text/javascript">
+        //TODO:when we need to write more conditions we use switch case instead of if-else 
+        
+        var i = 90;
+        var j = 90;
+        switch (i) {            
+            case i<=5:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            document.write('red<br>');
+            break;
+            default:
+            document.write('No case found with value ',i,'<br>');
+            break;
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10:
+            case i>5:
+            document.write('blue<br>');
+            break;            
+        }
+        //TODO:with switch value it will check with case and drop interpreter from there
+        var i=2;
+        switch (i){
+            case 1:
+                document.write('red<br>');
+            case 2: 
+                 document.write('blue<br>');
+        }
+        //TODO
+        var i = 3;
+        switch (i){
+            case 1:
+                document.write('red<br>');
+            case 2: 
+                 document.write('blue<br>');
+            break;
+            default:
+                document.write('no case found<br>');
+        }
+        //TODO
+        var i=45;
+        switch (i){
+            case i:
+                document.write(i + 'is greater than 40<br>');
+            
+            break;
+            default:
+                document.write('no cases found<br>'); 
+
+        }
+        //TODO
+
+      let day;        
+      switch (new Date().getDay()) {
+        case 0:
+          day = "Sunday";
+          break;
+        case 1:
+          day = "Monday";
+          break;
+        case 2:
+          day = "Tuesday";
+          break;
+        case 3:
+          day = "Wednesday";
+          break;
+        case 4:
+          day = "Thursday";
+          break;
+        case 5:
+          day = "Friday";
+          break;
+        case 6:
+          day = "Saturday";
+       }
+       document.getElementById('demo').innerHTML= 'today is '+day;
+
+    </script>
+</body>
+</html>

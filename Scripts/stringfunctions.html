@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string functions</title>
+</head>
+<body>
+    <script type="text/javascript">
+     var s="good night sweet dreams";
+    /* document.write(s);
+     document.write('<br>');
+     s='"hello karthik"';
+     document.write(s);
+     document.write('<br>');
+     //string.charAt()
+     document.write(s.charAt(5));
+     document.write('<br>');
+     var s='good night sweet dreams';
+     document.write(s.charAt(6));
+     document.write('<br>');
+     //string.charCodeAt() ASCII value of char
+     document.write(s.charCodeAt(5));
+     document.write('<br>');
+    //string.concat() to append data to source string
+    document.write(s.concat(',',1,true));
+    document.write('<br>');
+    document.write(s);
+    document.write('<br>');
+    s=s.concat(',',1,'true');
+    document.write(s);
+    document.write('<br>');
+    //string.fromCharCode() we get char from ASCII value as input (use String word)
+    s=String.fromCharCode(48,49,50,51,52,53,54);
+    document.write(s);
+    document.write('<br>');
+    s=String.fromCharCode(58,59,60,61,62,63);
+    document.write(s);
+    document.write('<br>');
+    s=String.fromCharCode(0+65,1+65,2+65,3+65,4+65,5+65);
+    document.write(s);
+    document.write('<br>');
+    //string.indexOf()
+    s='good morning guys!';
+    document.write(s.indexOf('d'));
+    document.write('<br>');
+    document.write(s.indexOf('x'));
+    document.write('<br>');
+    //string.lastIndexOf() gives last index of repeated char in string
+    document.write(s.lastIndexOf('o'));
+    document.write('<br>');
+    //string.slice() extract some portion
+    document.write(s.slice(1,6));
+    document.write('<br>');
+    //string.split() removes given substring value
+    document.write(s.split(' '));
+    document.write('<br>');
+    document.write(s.split('o'));
+    document.write('<br>');
+    s='good morning guys how are you ?';
+    document.write(s.split('o',3));
+    document.write('<br>');
+    //string.toUpperCase()
+    document.write(s.toUpperCase(' '));
+    document.write('<br>');
+    //string.toLowerCase()
+    document.write(s.toLowerCase(' '));
+    document.write('<br>');
+    //string.includes()
+    document.write(s.includes('good'));
+    document.write('<br>');
+    //string.endsWith()
+    document.write(s.endsWith('?'));
+    document.write('<br>');
+    //string.repeat()
+    s='hello';
+    document.write(s.repeat(2));
+    document.write('<br>');
+    //string.valueOf()
+    s='good morning guys';
+    document.write(s.valueOf());
+    document.write('<br>');*/
+    //string.match() if the sub str is present in orginal str then we get result in console as array
+    s='hello, i am a programmer';
+    document.write(s.match('hello'));
+    console.log(s.match('hello'));
+    document.write('<br>');
+    document.write(s.match('hi'));
+    console.log(s.match('hi'));
+    document.write('<br>');
+    //string.search() search the sub str in original str and gives index as result
+    s='hello, i am a programmer';
+    document.write(s.search('hi'));
+    document.write('<br>');
+    document.write(s.search('am'));
+    console.log(s.search('am'));
+    document.write('<br>');
+    //string.replace() we can replace new string instad of old string
+    var i='THIS is this new place';
+    document.write(i.replace('this','a'));
+    console.log(i.replace('this','a'));
+    document.write('<br>');
+    var i='this is this new place';
+    document.write(i.replace(/this/g,'a'));
+    console.log(i.replace(/this/g,'a')); //here g is global means every str with given sub str will changes as sub str
+    document.write('<br>');
+    var i='THIS is this new place';
+    document.write(i.replace(/this/gi,'A'));
+    console.log(i.replace(/this/gi,'A'));
+    document.write('<br>'); //here gi is global case insensitive 
+    //string.substr() gives substring from index ,[length of char]
+    var s='hi,i am a programmer';
+    document.write(s.substr(11,5));
+    document.write('<br>');
+    //string.substring() last index is excluded from index, to index
+    var s='hi,i am a programmer';
+    document.write(s.substring(0,2));
+    document.write('<br>');
+     </script>
+</body>
+</html>

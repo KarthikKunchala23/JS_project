@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <style>
+        @keyframes animation{
+            from{
+                background-color: blueviolet;
+            }
+            to{
+                background-color: aquamarine;
+            }
+        }
+        div{
+            background-color: blanchedalmond;
+            width: 400px;
+            height: 400px;
+            animation-name: animation;
+            animation-delay: 2s;
+            animation-duration: 5s;
+            animation-iteration-count:2;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1"><h1 id="id1">hello,good afternoon</h1></div>
+    <br><br>
+    <button onclick="changeText(),changeBg()">Click-To-Change-Text</button>
+    <br><br>
+    <script type="text/javascript">
+        function changeText()
+        {
+           var ele=document.getElementById('id1');
+           ele.innerHTML='good,Afternoon';
+           ele.style.color='blue';
+           /*ele.style.border='5px solid pink';*/
+           
+        }
+        function changeBg(){
+            var bg=document.getElementById('div1');
+            bg.style.backgroundColor='gold';
+        }
+        /*changeText();*/ 
+        //##########
+        function add(a,b)
+        {
+            return a+b;
+        }
+        document.write(add(10,30));
+
+    </script>
+</body>
+</html>

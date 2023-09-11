@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function7</title>
+</head>
+<body>
+    <textarea id="txt1" onfocus="eventFocus()" onblur="eventBlur()">Hello,</textarea>
+    <script type="text/javascript">
+        function eventFocus(){
+            var txt1=document.getElementById('txt1');
+            txt1.style.background='skyblue';
+        }
+        function eventBlur(){
+            var txt1=document.getElementById('txt1');
+            txt1.style.background='white';
+        }
+
+    </script>
+</body>
+</html>
